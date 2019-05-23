@@ -9,7 +9,6 @@ class UniqCounter {
 	// no more than 32kb of memory should be used here
 private:
 	static const int N = 1 << 11;
-    std::hash<int> hasher;
 	double alpha = (0.7213 * N) / (N + 1.079);
 	static const int MAX_RANK = 33;
 
